@@ -846,4 +846,5 @@ $( document ).ready(function(){
     // Semantic UI
     $('.ui.martor-toolbar .ui.dropdown').dropdown();
     $('.ui.tab-martor-menu .item').tab();
+    $.fn.modal.settings.className = 'martor-modal';
 });

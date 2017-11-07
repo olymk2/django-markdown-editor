@@ -10,6 +10,9 @@ setup(
     name='martor',
     version=__VERSION__,
     packages=find_packages(exclude=["*demo"]),
+    sass_manifests={
+        'martor': ('static/martor/sass', 'static/martor/css')
+    },
     include_package_data=True,
     zip_safe=False,
     description='Django Markdown Editor',
@@ -41,5 +44,6 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     ],
+    setup_requires=['libsass >= 0.6.0'],
     install_requires=get_requirements(),
 )
